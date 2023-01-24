@@ -13,3 +13,21 @@ DB_USERNAME => Usuário do banco de dados.
 DB_PASSWORD => Senha do usuário do banco de dados.
 
 DB_HOST => Endereço do banco de dados.
+
+### Imagem docker
+
+Para rodar a imagem docker
+
+```
+cd ./src
+docker container run -d --rm -p 8080:8080 damatomos/kube-news
+```
+
+### Kubernetes
+
+Para rodar o kubernetes
+
+```
+cd ./k8s
+kubectl apply -f deployment.yaml
+```
