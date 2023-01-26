@@ -54,7 +54,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: damatomos/kube-news:latest
+          image: damatomos/kube-news:{{TAG}}
           ports:
           - containerPort: 8080
           env:
